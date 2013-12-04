@@ -1,4 +1,0 @@
-AuthName "Secure Area"
-AuthType Basic
-AuthUserFile /home/murphys7/.htpasswds/.htpasswd
-require valid-user
