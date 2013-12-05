@@ -559,30 +559,11 @@ $(document).ready(function() {
 			var template = $(tpl).clone();
 			template.removeAttr('style');	
 			template.removeClass('template'); 			
-// 			template.find("a").html(events[i].start_day + "<span>" + events[i].start_month + "</span>");
-// 			template.find(".title").text(events[i].name);
-// 			template.find("img").attr("src",events[i].cover);
-			
 			template.attr("album-id",album.id);
-			template.find("a").css("href",album.link);
+			template.find("a").attr("href",album.link);
 			template.find(".thumb-bg").css("background-image","url("+album.cover+")");
 			template.find("figcaption div").text(album.name);
-
-// 			template.click(function(){
-// 				
-// 				var data = "albumid=" + $(this).attr("album-id");
-// 				$.ajax({
-// 					url: "facebook/facebook-albums.php",
-// 					type: "GET",
-// 					success: function (result) {
-// 						if (result) {
-// 							 var json = jQuery.parseJSON(result);
-// 							 renderPhotos(json);
-// 						}
-// 					}
-// 		
-// 				});				
-// 			});		
+	
 		
 			$("#facebookAlbums .thumbnails").append(template);
 		}	

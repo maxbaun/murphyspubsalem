@@ -68,5 +68,5 @@ a:focus {
 .customSelectInner { background: url(../img/select-arrow.png) no-repeat center right; }
 .to-top { background: url(../img/top.png) no-repeat; }
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose { background-image:url(../img/colorbox.png); }
-#gallery figcaption div { background-image: url(../img/zoom.png); }
+/* #gallery figcaption div { background-image: url(../img/zoom.png); } */
 

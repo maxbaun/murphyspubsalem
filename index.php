@@ -2,7 +2,7 @@
 $title = "Salem Night Life, Sports Bar, and Restaurant | Murphy's Salem";
 $keywords = "salem, trivia, sports, nightlife, karaoke, restaurant, bar, irish pub, sports bar, djs, music";
 $metadescription = "Salem, MA nightlife, pub, sports bar, and restaurant. Murphy's Salem features the best in live music and DJs on the North Shore.";
-$version = 1.5;
+$version = 1.71;
 $dev = false;
 ?>
 
@@ -197,7 +197,7 @@ $dev = false;
 				</div>
 				<div class="span4">
 					<h3>Food & Drinks</h3>
-					<p>Our kitchen opens 7 days a week at 11:30 serving high quality American fare complimented by twenty-five beers plus a full bar to quench your cocktail desires. Nightly dinner specials including:</p>
+					<p>Open Monday through Friday at 3pm and 11:30am on the weekends, our kitchen serves high quality American fare complimented by twenty-five beers plus a full bar to quench your cocktail desires. Nightly dinner specials including:</p>
 					<ul>
 						<li>25 cent chicken finger and wing night on Mondays</li>
 						<li>$2 eight ounce Burgers on Tuesdays</li>
@@ -394,7 +394,7 @@ $dev = false;
 					<div class="span4">
 						<div class="center">
 							<img src="img/371-baseball-diamond@2x.png"/>
-							<p>No better place to watch the Red Sox fight there way to the World Series then at Murphy's Salem.</p>
+							<p>No better place to watch the Red Sox fight their way to the World Series then at Murphy's Salem.</p>
 						</div>
 					</div>		
 					<div class="span4">
@@ -530,7 +530,7 @@ $dev = false;
 					<?php include("inc/address.inc"); ?>					
 					<ul class="social">
 						<li><a href="https://www.facebook.com/pages/Murphy's-Restaurant-Pub/637938886216768">Join us on Facebook!</a></li>
-						<li><a href="https://twitter.com/Murphy'sSalem">Follow us on Twitter!</a></li>
+						<li><a href="https://twitter.com/MurphysSalem">Follow us on Twitter!</a></li>
 					</ul>
 					
 				</div>
@@ -580,7 +580,7 @@ $dev = false;
 	<div id="footer">
 		<div class="container">
 			<a href="#front" class="to-top">Back to Top</a>
-			<div class="copy">Copyright &copy; 2013 <a href="http://Murphy'spubsalem.com/">Murphy's Salem</a>. All Rights Reserved.</div>
+			<div class="copy">Copyright &copy; 2013 <a href="http://murphyspubsalem.com/">Murphy's Salem</a>. All Rights Reserved.</div>
 			<!-- <div class="powered">Website Powered by <a href="http://www.d3applications.com/" rel="external">D3 Applications</a></div> -->
 		</div>
 	</div>
