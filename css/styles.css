@@ -650,6 +650,11 @@ label.option{
 
 #sports { background-color: #381414; background-image: url(../img/sports-bg.jpg); }
 
+#sports .span4 img{
+	height: 60px;
+	margin-bottom: 14px;
+}
+
 /* #Nightlife
 ================================================== */
 #nightlife {

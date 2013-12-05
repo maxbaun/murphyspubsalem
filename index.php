@@ -2,7 +2,7 @@
 $title = "Salem Night Life, Sports Bar, and Restaurant | Murphy's Salem";
 $keywords = "salem, trivia, sports, nightlife, karaoke, restaurant, bar, irish pub, sports bar, djs, music";
 $metadescription = "Salem, MA nightlife, pub, sports bar, and restaurant. Murphy's Salem features the best in live music and DJs on the North Shore.";
-$version = 1.71;
+$version = 1.72;
 $dev = false;
 ?>
 
@@ -388,7 +388,7 @@ $dev = false;
 					<div class="span4">
 						<div class="center">
 							<img src="img/374-basketball@2x.png"/>
-							<p>Celebrate Irish pride with the Celtics at the best Irish Pub North of Boston!</p>
+							<p>Celebrate Irish pride with the Celtics at the best Irish Pubs North of Boston!</p>
 						</div>
 					</div>
 					<div class="span4">
