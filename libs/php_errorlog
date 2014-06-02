@@ -536,3 +536,85 @@
 [21-Oct-2013 20:44:36 CST6CDT] PHP Parse error:  syntax error, unexpected '[' in /home/murphys7/public_html/libs/facebook-albums.php on line 21
 [21-Oct-2013 18:45:10 America/Los_Angeles] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
   thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[15-Dec-2013 19:59:14 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 6: name lookup timed out
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[15-Dec-2013 19:59:24 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 6: name lookup timed out
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[18-Dec-2013 19:21:41 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[22-Dec-2013 12:27:36 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[23-Dec-2013 14:09:26 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[23-Dec-2013 20:00:11 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[31-Dec-2013 14:26:43 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[03-Jan-2014 11:47:48 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 7: Failed to connect to 2a03:2880:10:cf07:face:b00c:0:1: Network is unreachable
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[06-Jan-2014 10:11:16 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[12-Jan-2014 13:42:49 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[13-Jan-2014 10:14:51 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[13-Jan-2014 13:20:01 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 28: Operation timed out after 10135 milliseconds with 0 out of 0 bytes received
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[13-Jan-2014 14:01:53 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 7: Failed to connect to 2a03:2880:10:cf07:face:b00c:0:1: Network is unreachable
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[13-Jan-2014 14:01:59 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 7: Failed to connect to 2a03:2880:10:cf07:face:b00c:0:1: Network is unreachable
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[13-Jan-2014 14:11:29 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 28: Operation timed out after 10139 milliseconds with 0 out of 0 bytes received
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[13-Jan-2014 15:22:29 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 7: Failed to connect to 2a03:2880:10:cf07:face:b00c:0:1: Network is unreachable
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[24-Jan-2014 03:04:20 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 7: Failed to connect to 2a03:2880:10:cf07:face:b00c:0:1: Network is unreachable
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[25-Jan-2014 09:10:30 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 7: Failed to connect to 2a03:2880:10:cf07:face:b00c:0:1: Network is unreachable
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[07-Feb-2014 13:35:34 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 35: Unknown SSL protocol error in connection to graph.facebook.com:443 
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[07-Feb-2014 13:35:37 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 35: Unknown SSL protocol error in connection to graph.facebook.com:443 
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[14-Feb-2014 18:05:17 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[17-Feb-2014 18:33:19 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[21-Feb-2014 18:42:47 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 28: Operation timed out after 10390 milliseconds with 0 out of 0 bytes received
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[21-Feb-2014 20:03:41 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[22-Feb-2014 11:42:03 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[22-Feb-2014 16:21:37 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[23-Feb-2014 06:03:52 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[23-Feb-2014 16:18:54 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[25-Feb-2014 08:31:54 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 7: Failed to connect to 2a03:2880:10:cf07:face:b00c:0:1: Network is unreachable
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[25-Feb-2014 13:01:18 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[26-Feb-2014 06:55:54 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[26-Feb-2014 09:21:59 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[26-Feb-2014 10:28:44 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[28-Feb-2014 07:20:03 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[28-Feb-2014 10:51:41 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[02-Mar-2014 12:13:24 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
+[03-Mar-2014 03:26:09 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 6: name lookup timed out
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[03-Mar-2014 03:26:09 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 6: name lookup timed out
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[03-Mar-2014 03:35:05 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 6: name lookup timed out
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[03-Mar-2014 03:35:15 America/Los_Angeles] PHP Fatal error:  Uncaught CurlException: 6: name lookup timed out
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 989
+[03-Mar-2014 11:04:39 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An unknown error has occurred.
+  thrown in /home/murphys7/public_html/libs/base_facebook.php on line 1264
