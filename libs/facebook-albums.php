@@ -1,17 +1,18 @@
 <?php
+
 date_default_timezone_set('America/Los_Angeles');  
-require_once("facebook.php");
-
-$config = array();
-$config['appId'] = '409416482513248';
-$config['secret'] = 'df012044a3b3003e0814ad2f03fed7ed';
-
-$facebook = new Facebook($config);
-
-$d = $facebook->api("637938886216768/albums?fields=cover_photo,link,name,id");
-//$d = $facebook->api("637938886216768/events?fields=cover,end_time,name,id");
-
-
+ require_once("facebook.php");
+// 
+ $config = array();
+ $config['appId'] = '409416482513248';
+ $config['secret'] = 'df012044a3b3003e0814ad2f03fed7ed';
+// 
+ $facebook = new Facebook($config);
+// 
+ $d = $facebook->api("637938886216768/albums?fields=cover_photo,link,name,id");
+// //$d = $facebook->api("637938886216768/events?fields=cover,end_time,name,id");
+// 
+// 
 $data = $d['data'];
 $albums = Array();
 foreach($data as $album)
@@ -25,8 +26,12 @@ foreach($data as $album)
 	}
 	else
 	{
-		$coverdata = $facebook->api($album['cover_photo']);
-		$cover = $coverdata['images'][3]['source'];
+		$coverdata = $facebook->api($album['cover_photo']);		
+		if(is_null($coverdata['images'][3]['source'])){
+			$cover = $coverdata['images'][1]['source'];	// if the regular image is not avail, use the first one			
+		}
+		else
+			$cover = $coverdata['images'][3]['source'];
 	}
 	$link = $album['link'];
 	

@@ -2,8 +2,11 @@
 $title = "Salem Night Life, Sports Bar, and Restaurant | Murphy's Salem";
 $keywords = "salem, trivia, sports, nightlife, karaoke, restaurant, bar, irish pub, sports bar, djs, music";
 $metadescription = "Salem, MA nightlife, pub, sports bar, and restaurant. Murphy's Salem features the best in live music and DJs on the North Shore.";
-$version = 1.72;
+$version = 1.78;
 $dev = false;
+$pref = ""; 
+$pref = isset($_SERVER["HTTPS"] ) ? "https://" : "http://";
+$host = $pref . $_SERVER["HTTP_HOST"];
 ?>
 
 <!doctype html>
@@ -38,6 +41,8 @@ $dev = false;
 	
 	<!--  Mobile Viewport Fix -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	
+	<meta name="host" content="<?php echo $host; ?>" id="metahost">
 
 	<!-- CSS
     ================================================== -->
@@ -197,7 +202,7 @@ $dev = false;
 				</div>
 				<div class="span4">
 					<h3>Food & Drinks</h3>
-					<p>Open Monday through Friday at 3pm and 11:30am on the weekends, our kitchen serves high quality American fare complimented by twenty-five beers plus a full bar to quench your cocktail desires. Nightly dinner specials including:</p>
+					<p>Open every day at 11:30am, our kitchen serves high quality American fare complimented by twenty-five beers plus a full bar to quench your cocktail desires. Nightly dinner specials including:</p>
 					<ul>
 						<li>25 cent chicken finger and wing night on Mondays</li>
 						<li>$2 eight ounce Burgers on Tuesdays</li>
@@ -205,7 +210,7 @@ $dev = false;
 					</ul>
 
 					<h3>Nightlife</h3>
-					<p>Any conversation about the Best Northshore Nightlife will certainly lead to Murphy’s. Every Thursday, Friday, and Saturday we bring in two of the area’s hottest DJ’s for multiple floors of music and fun. The fun isn't just on the weekend- Sunday nights DJs are on the first floor, come down Mondays for Karaoke, and Tuesday evening join us for Trivia night followed by a live DJ.</p>
+					<p>Any conversation about the Best Northshore Nightlife will certainly lead to Murphy’s. Every Thursday, Friday, and Saturday we bring in two of the area’s hottest DJ’s for multiple floors of music and fun. The fun isn't just on the weekend- Sunday nights DJs are on the first floor, come down Mondays for Karaoke, Tuesday evening join us for Trivia night followed by a live DJ, and Wednesday evening we have a live DJ.</p>
 				</div>
 				<div class="span4">
 					<h3>Events and Functions</h3>
@@ -221,7 +226,7 @@ $dev = false;
 	
 	<!-- Directions -->
 	<div id="events" class="panel section-type light" data-slide="3" data-stellar-background-ratio="0" >
-		<h2 class="page-title">Events</h2>
+		<h2 class="page-title">Events<span class="slide-loader"> (Loading...)</span></h2>
 		
 		<div class="container">
 			<div class="row-fluid">
@@ -449,7 +454,7 @@ $dev = false;
 					<h3>DJs</h3>
 					<p>Two floors of the hottest local DJs Thursday, Friday, and Saturday nights along with downstairs entertainment throughout the week.</p>
 					<h3>Live Music</h3>
-					<p>Saturday afternoons are filled with some of the areas best bands weekly from 4 to 7</p>
+					<p>Saturday afternoons are filled with some of the areas best bands weekly from 4 to 7. We also have live entertainment on certain Fridays as well as Sundays!</p>
 				</div>
 				<div class="span4">
 					<h3>Karaoke</h3>
@@ -503,7 +508,7 @@ $dev = false;
 						<div class="control-group">
 							<label class="control-label" for="inputEmail">Your E-Mail (*):</label>
 							<div class="controls">
-							  <input type="text" class="span12" name="email" id="inputEmail" placeholder="john@doe.cc">
+							  <input type="text" class="span12" name="email" id="inputEmail" placeholder="john@doe.com">
 							</div>
 						</div>
 						
@@ -595,7 +600,7 @@ $dev = false;
 	-->
 
 	<!-- jQuery -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 	<!-- Google Maps API -->
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -621,7 +626,7 @@ $dev = false;
 	<script>
 		$(document).ready(function() {
 			$("#eventCalendar").eventCalendar({
-				eventsjson: 'libs/facebook-events.php',
+				eventsjson: '<?php echo $host; ?>/libs/facebook-events.php',
 				jsonDateFormat: 'human'  // 'YYYY-MM-DD HH:MM:SS'
 			});
 		});

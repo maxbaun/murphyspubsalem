@@ -9,6 +9,8 @@ $(document).ready(function() {
 
 	/* #Configurations
 	================================================== */	
+	//http // https + host // domain
+	var host = $("#metahost").attr("content");
 	
 	// All the markers
 	// You can get the latitude and longitude from http://www.dbsgeo.com/latlon/
@@ -27,7 +29,7 @@ $(document).ready(function() {
 	// This will also show first location info instead of a text telling to change location to see info, etc.
 	// You would also need to remove this div manually if you set to true (located line 180-182 in the index file)
 	var setFirstLocation = false;
-
+	
 
 	/* Text Variables
 	================================================== */
@@ -534,17 +536,29 @@ $(document).ready(function() {
 	getFacebookAlbums();
 	
 	function getFacebookAlbums(){
-		$.ajax({
-			url: "libs/facebook-albums.php",
-			type: "GET",
-			success: function (result) {
-				if (result) {
-					 var json = jQuery.parseJSON(result);
-					 renderAlbums(json);
+			$.getJSON("/libs/facebook-albums.php", function(data) {
+				if (data) {
+					 //var json = jQuery.parseJSON(data);
+					 renderAlbums(data);
 				}
-			}
+			}).error(function() {
+				alert("There was an error");
+			});		
 		
-		});
+// 		$.ajax({
+// 			url: host + "/libs/facebook-albums.php",
+// 			type: "GET",
+// 			timeout:"5000",
+// 			success: function (result) {
+// 				if (result) {
+// 					 var json = jQuery.parseJSON(result);
+// 					 renderAlbums(json);
+// 				}
+// 			},error:function(error){
+// 				alert("There was an error");
+// 			}
+// 		
+// 		});
 		
 		return false;
 	}	

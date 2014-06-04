@@ -8,7 +8,7 @@
 		Paradigma Tecnologico (@paradigmate)
 */
 
-;$.fn.eventCalendar = function(options){
+$.fn.eventCalendar = function(options){
 
 	var eventsOpts = $.extend({}, $.fn.eventCalendar.defaults, options);
 
@@ -17,13 +17,13 @@
 		wrap: "",
 		directionLeftMove: "300",
 		eventsJson: {}
-	}
+	};
 
 	// each eventCalendar will execute this function
 	this.each(function(){
 
 		flags.wrap = $(this);
-		flags.wrap.addClass('eventCalendar-wrap').append("<div class='eventsCalendar-list-wrap'><p class='eventsCalendar-subtitle'></p><span class='eventsCalendar-loading'>loading...</span><div class='eventsCalendar-list-content'><ul class='eventsCalendar-list'></ul></div></div>");
+		flags.wrap.addClass('eventCalendar-wrap').append("<div class='eventsCalendar-list-wrap'><p class='eventsCalendar-subtitle'></p><span class='eventsCalendar-loading'>Loading...</span><div class='eventsCalendar-list-content'><ul class='eventsCalendar-list'></ul></div></div>");
 
 		if (eventsOpts.eventsScrollable) {
 			flags.wrap.find('.eventsCalendar-list-content').addClass('scrollable');
@@ -58,42 +58,15 @@
 				month = flags.wrap.attr('data-current-month');
 
 			getEvents(eventsOpts.eventsLimit, year, month,false, "month");
-		})
+		});
 
 
 
 	});
 
-	// show event description
-// 	flags.wrap.find('.eventsCalendar-list').on('click','.eventTitle',function(e){
-// 	//flags.wrap.find('.eventsCalendar-list .eventTitle').live('click',function(e){
-// 		if(!eventsOpts.showDescription) {
-// 			e.preventDefault();
-// 			var desc = $(this).parent().find('.eventDesc');
-// 
-// 			if (!desc.find('a').size()) {
-// 				var eventUrl = $(this).attr('href');
-// 				var eventTarget = $(this).attr('target');
-// 
-// 				// create a button to go to event url
-// 				desc.append('<a href="' + eventUrl + '" target="'+eventTarget+'" class="bt">'+eventsOpts.txt_GoToEventUrl+'</a>')
-// 			}
-// 
-// 			if (desc.is(':visible')) {
-// 				desc.slideUp();
-// 			} else {
-// 				if(eventsOpts.onlyOneDescription) {
-// 					flags.wrap.find('.eventDesc').slideUp();
-// 				}
-// 				desc.slideDown();
-// 			}
-// 
-// 		}
-// 	});
-
 	function sortJson(a, b){
 		return a.date.toLowerCase() > b.date.toLowerCase() ? 1 : -1;
-	};
+	}
 
 	function dateSlider(show, year, month) {
 		var $eventsCalendarSlider = $("<div class='eventsCalendar-slider'></div>"),
@@ -227,6 +200,8 @@
 		var limit = limit || 0;
 		var year = year || '';
 		var day = day || '';
+		
+		$("#events").find(".slide-loader").show();
 
 		// to avoid problem with january (month = 0)
 
@@ -248,6 +223,19 @@
 
 		} else if (!eventsOpts.cacheJson || !direction) {
 			// first load: load json and save it to future filters
+// 			$.ajax({
+// 				url: eventsOpts.eventsjson + "?limit="+limit+"&year="+year+"&month="+month+"&day="+day,
+// 				type: "GET",
+// 				timeout:"5000",
+// 				success: function (data) {
+// 					flags.eventsJson = data; // save data to future filters
+// 					getEventsData(flags.eventsJson, limit, year, month, day, direction);
+// 				},error:function(error){
+// 					showError("error getting json: ");
+// 				}
+// 		
+// 			});
+			
 			$.getJSON(eventsOpts.eventsjson + "?limit="+limit+"&year="+year+"&month="+month+"&day="+day, function(data) {
 				flags.eventsJson = data; // save data to future filters
 				getEventsData(flags.eventsJson, limit, year, month, day, direction);
@@ -357,13 +345,19 @@
 								if (month === false && eventDate < new Date()) {
 
 								} else {
-									eventStringDate = eventDay + "/" + eventMonthToShow + "/" + eventYear;
+									//changing for MM/DD/YYYY 6.4.14 - MB
+									eventStringDate =  eventMonthToShow + "/" + eventDay + "/" + eventYear;
 									if (event.url) {
 										var eventTitle = '<a href="'+event.url+'" target="' + eventLinkTarget + '" class="eventTitle">' + event.title + '</a>';
 									} else {
 										var eventTitle = '<span class="eventTitle">'+event.title+'</span>';
 									}
-									events.push('<li id="' + key + '" class="'+event.type+'"><time datetime="'+eventDate+'"><em>' + eventStringDate + '</em><small>'+eventHour+":"+eventMinute+'</small></time>'+eventTitle+'<p class="eventDesc ' + eventDescClass + '">' + event.description + '</p></li>');
+									
+									//6.4.14 - MB - changing for AM to PM time
+									var prettyHour = (eventHour > 12) ? eventHour - 12 : eventHour;
+									var eventAmPm = (eventHour > 12) ? "pm" : "am";
+									
+									events.push('<li id="' + key + '" class="'+event.type+'"><time datetime="'+eventDate+'"><em>' + eventStringDate + '</em><small>'+prettyHour+":"+eventMinute+' '+eventAmPm+'</small></time>'+eventTitle+'<p class="eventDesc ' + eventDescClass + '">' + event.description + '</p></li>');
 									i++;
 								}
 						}
@@ -395,6 +389,7 @@
 		setCalendarWidth();
 		
 		$("#eventCalendar").animate({opacity: "1"},100);
+		$("#events").find(".slide-loader").hide();
 	}
 
 	function changeMonth() {
@@ -436,7 +431,6 @@
 
 // define the parameters with the default values of the function
 $.fn.eventCalendar.defaults = {
-    eventsjson: 'js/events.json',
 	eventsLimit: 4,
 	monthNames: [ "January", "February", "March", "April", "May", "June",
 		"July", "August", "September", "October", "November", "December" ],

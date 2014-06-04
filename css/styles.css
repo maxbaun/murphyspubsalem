@@ -573,7 +573,7 @@ label.option{
 	margin-right:10px;
 }
 
-#events { background-color: #381414; background-image: url(../img/red-barbg.jpg); }
+#events { background-color: #381414; background-image: url(../img/red-barbg.jpg); background-size: cover;}
 
 /* #Menu
 ================================================== */

@@ -167,11 +167,11 @@
 		.eventsCalendar-loading {
 			border-radius:4px;
 			margin:5px auto;
-			padding:0 10px;
-			background-color:#ccc;
+/* 			padding:0 10px; */
+/* 			background-color:#ccc; */
 			color:#fff;
-			text-align:center;
-			font-weight:bold;
+/* 			text-align:center; */
+/* 			font-weight:bold; */
 /* 
 			box-shadow:0 0 10px #ccc;
 			text-shadow:0 0 3px #aaa;
