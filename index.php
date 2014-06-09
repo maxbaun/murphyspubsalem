@@ -214,7 +214,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 				</div>
 				<div class="span4">
 					<h3>Events and Functions</h3>
-					<p>Whether you’re planning a birthday, graduation, bachelorette party, reunion, rehearsal dinner, anniversary, homecoming, benefit, or just a night out with friends  WE’VE COT YOU COVERED.</p>
+					<p>Whether you’re planning a birthday, graduation, bachelorette party, reunion, rehearsal dinner, anniversary, homecoming, benefit, or just a night out with friends  WE’VE GOT YOU COVERED.</p>
 					<p>Available options include but are not limited to: Full facility rental; Bottle Service; 3rd floor Private VIP balcony lounge with leather couches, 2nd floor end stage couches, 2nd floor state room, and more.</p>
 
 					<h3>Sports</h3>
@@ -257,7 +257,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 				</div>
 						
 				<div class="span12">
-					<p>Whether you’re planning a birthday, graduation, bachelorette party, reunion, rehearsal dinner, anniversary, homecoming, benefit, or just a night out with friends  WE’VE COT YOU COVERED.</p>
+					<p>Whether you’re planning a birthday, graduation, bachelorette party, reunion, rehearsal dinner, anniversary, homecoming, benefit, or just a night out with friends  WE’VE GOT YOU COVERED.</p>
 
 					<p>Available options include but are not limited to: Full facility rental; Bottle Service; 3rd floor Private VIP balcony lounge with leather couches, 2nd floor end stage couches, 2nd floor state room, and more</p>
 
