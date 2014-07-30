@@ -3,7 +3,7 @@ $title = "Salem Night Life, Sports Bar, and Restaurant | Murphy's Salem";
 $keywords = "salem, trivia, sports, nightlife, karaoke, restaurant, bar, irish pub, sports bar, djs, music";
 $metadescription = "Salem, MA nightlife, pub, sports bar, and restaurant. Murphy's Salem features the best in live music and DJs on the North Shore.";
 $version = 1.78;
-$dev = false;
+$dev = true;
 $pref = ""; 
 $pref = isset($_SERVER["HTTPS"] ) ? "https://" : "http://";
 $host = $pref . $_SERVER["HTTP_HOST"];
@@ -19,29 +19,24 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 	
 	<!-- Basic Page Needs
   ================================================== -->
-
   	<!-- Charset -->
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   	
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Salem Night Life, Sports Bar, and Restaurant | Murphy's Salem</title>
-	
+	<!-- META INFO FOR SEO -->
+	<title>Salem Night Life, Sports Bar, and Restaurant | Murphy's Salem</title>	
 	<meta name="title" content="<?php echo $title; ?>">
 	<meta name="description" content="<?php echo $metadescription; ?>">
 	<meta name="keywords" content="<?php echo $keywords; ?>">
-	<!-- Google will often use this as its description of your page/site. Make it good. -->
 	
-	<meta name="google-site-verification" content="">
-
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
 	<meta name="DC.title" content="<?php echo $title; ?>">
 	<meta name="DC.subject" content="<?php echo $metadescription; ?>">
 	
 	<!--  Mobile Viewport Fix -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	
 	<meta name="host" content="<?php echo $host; ?>" id="metahost">
 
 	<!-- CSS
@@ -53,6 +48,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
     if( $dev )
     {
     ?>   	
+    	<!-- DEV STYLES -->
 		<!-- Core CSS File. The CSS code needed to make eventCalendar works -->
 		<link rel="stylesheet" href="css/eventCalendar.css?v=<?php echo $version; ?>">
 
@@ -69,7 +65,8 @@ $host = $pref . $_SERVER["HTTP_HOST"];
     <?php } 
     else {
 	?>
-		<link rel="stylesheet" href="css/murphys.min.css?v=<?php echo $version; ?>">
+		<!-- PRODUCTION STYLES -->
+		<link rel="stylesheet" href="css/styles.min.css?v=<?php echo $version; ?>">
 	<?php } ?>
 
 	<!-- Favicons
@@ -94,7 +91,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 </head>
 <body>	
 
-	<!-- Top -->
+	<!-- NAVBAR -->
 	<div id="top">
 		<div class="container">
 			<div class="row-fluid">
@@ -127,39 +124,8 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 			
 		</div>	
 	</div>
-
-<!-- 
-	Front page	<div id="front" class="panel flexslider" data-slide="1" data-stellar-background-ratio="0.5">
-		<ul class="slides">
-			<li>
-				<img src="img/slides/Murphy's-salem-outdoor-patio.jpg" alt="Murphy's Salem Outdoor Patio Restaurant" />
-				
-				<div class="slide-content center">
-					<div class="container">
-						<div class="span12">
-							<div class="title"><span>PLACE HOLDER TEXT</span></div>
-							<div class="subtitle"><span>PLACE HOLDER TEXT</span></div>
-						
-						</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<img src="img/slides/Murphy's-salem-irish-pub-restaurant.jpg" alt="Salem Nightlife And Restaurant" />
-				<div class="slide-content center">
-					<div class="container">
-						<div class="span12">
-							<div class="title"><span>PLACE HOLDER TEXT</span></div>
-							<div class="subtitle"><span>PLACE HOLDER TEXT</span></div>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
- -->
 	
-	<!-- Front page -->
+	<!-- HERO -->
 	<div id="front" class="panel flexslider" data-slide="1" data-stellar-background-ratio="0.5">
 		<ul class="slides">
 			<li>
@@ -181,7 +147,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 	</div>	
 	
 	
-	<!-- About -->
+	<!-- ABOUT -->
 	<div id="about" class="panel paper" data-slide="2" data-stellar-background-ratio="1">
 		<div class="container">
 			<div class="row-fluid hidden-phone" id="about-pictures">
@@ -224,7 +190,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 		</div>
 	</div>
 	
-	<!-- Directions -->
+	<!-- EVENTS -->
 	<div id="events" class="panel section-type light" data-slide="3" data-stellar-background-ratio="0" >
 		<h2 class="page-title">Events<span class="slide-loader"> (Loading...)</span></h2>
 		
@@ -267,9 +233,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 					</div>				
 				</div>
 
-			
-				<div class="span12">
-				
+				<div class="span12">	
 					<div id="privteFunctionsFormWraper" style="display:none;">
 						<form id="functions-contact-form" action="libs/mail-functions.php" method="post" class="form-horizontal">
 							<div class="control-group">
@@ -363,28 +327,17 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 		
 	</div>
 
-	
-	<!-- Wine list -->
+	<!-- MENU -->
 	<div id="menu" class="panel paper section-type menu-type dark" data-slide="5" data-stellar-background-ratio="0">
-		
-		<!-- Paralax elements (you can remove if you want, they only show up on 1200px+ screens) -->
-<!-- 
-		<div id="grapes" data-stellar-background-ratio="2" data-stellar-vertical-offset="-1310"></div>
-		<div id="grape" data-stellar-background-ratio="2.5" data-stellar-vertical-offset="-1350"></div>
-		<div id="wine-glass" data-stellar-background-ratio="1.5" data-stellar-vertical-offset="-2000"></div>
- -->
-		
-		
 		<h2 class="page-title">Menu</h2>
-		
 		<div class="container">
 			<div class="row-fluid">
 				<?php include("inc/menu.inc"); ?>				
 			</div>
 		</div>
-		
 	</div>
-	
+
+	<!-- SPORTS -->
 	<div id="sports" class="panel section-type light" data-slide="6" data-stellar-background-ratio="0">
 		<h2 class="page-title">Sports</h2>
 			<div class="container">
@@ -432,6 +385,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 			</div>		
 	</div>
 	
+	<!-- NIGHTLIFE -->
 	<div id="nightlife" class="panel dark-leather section-type light" data-slide="7" data-stellar-background-ratio="1.5">
 		<div class="container">
 			<div class="row-fluid hidden-phone" id="nightlife-pictures">
@@ -467,7 +421,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 		</div>
 	</div>	
 	
-	<!-- Gallery -->
+	<!-- GALLERY -->
 	<div id="gallery" class="panel concrete section-type light" data-slide="8" data-stellar-background-ratio="1.5">
 		<h2 class="page-title">Gallery</h2>
 		<div class="container" id="facebookAlbums">
@@ -476,7 +430,6 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 					<figure>
 						<div class="thumb-bg" style="height:227px;width:350px;overflow:hidden;">
 						<a href="" class="thumbnail" target="_blank"> 
-<!-- 							<img src="" /> -->
 							<figcaption><div>You can put a little description in here</div></figcaption>
 						</a>
 						</div>
@@ -486,7 +439,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 		</div>	
 	</div>
 	
-	<!-- Contact -->
+	<!-- CONTACT -->
 	<div id="contact" class="panel paper section-type dark" data-slide="9" data-stellar-background-ratio="1.5">
 		
 		<div id="contact-map"></div>
@@ -544,44 +497,6 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 		</div>
 	</div>
 	
-	<!-- Closing -->
-<!-- 
-	<div id="closing" class="panel concrete section-type">
-		<div class="container">
-			
-			<div id="circles">
-				&bull; &bull; &bull;
-			</div>
-			
-			<blockquote class="span6">
-				<p>&#8220; Lorem ipsum dolor sit amet, consectetur adipiscing eliters. Aenean auctor aliquam libero. Fusce nec risus in massa blandit sagittis. Quisque in nisl in nulla eleifend porttitor. &#8221;
-				</p>
-			</blockquote>
-			
-			<div class="quote-border"></div>
-			
-			<div id="mailing-list">
-				<h3>Text Message List Sign-Up</h3>
-				<p>
-					Stay up-to-date with our upcoming events and promotions
-				</p>
-				
-				<!~~ text message form goes here ~~>
-				<form method="post" action="http://simplicix.us2.list-manage.com/subscribe/post?u=a8ece0e328d32451b73b8fec7&amp;id=a1fecce11b" class="form-inline" target="_blank">
-				  <input class="text" id="email" type="text" name="EMAIL" placeholder="Phone Number" />
-				  <button class="btn btn-primary" type="submit">Subscribe!</button>
-				</form>
-
-				<div id="response-newsletter" style="display: none;"></div>
-			</div>
-			
-			
-			
-		</div>
-	
-	</div>
- -->
-	
 	<div id="footer">
 		<div class="container">
 			<a href="#front" class="to-top">Back to Top</a>
@@ -601,26 +516,24 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 
 	<!-- jQuery -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 	<!-- Google Maps API -->
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	
-	<!-- ALl the scripts -->
-	
-	
-    
     <?php
     if( $dev )
     {
     ?>  
+    	<!-- DEV SCRIPTS -->
     	<script src="js/all.js?v=<?php echo $version; ?>"></script>	
     	<script src="js/global.js"></script>
     	<script src="js/jquery.eventCalendar.js" type="text/javascript"></script>
 
     <?php } 
+
     else {
 	?>
-		<script src="js/murphys.min.js?v=<?php echo $version; ?>"></script>
+		<!-- PRODUCTION SCRIPTS -->
+		<script src="js/scripts.min.js?v=<?php echo $version; ?>"></script>
 	<?php } ?>
 	
 	<script>
@@ -632,6 +545,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 		});
 	</script>	
 	
+	<!-- Google Analytics -->
 	<?php include_once("inc/analyticstracking.php"); ?>	
 </body>
 </html>

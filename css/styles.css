@@ -179,7 +179,8 @@ a:focus {
 ================================================== */
 #top {
 	position: fixed;
-	background: url(../img/brickbg-dark.png) repeat-x;
+	background-image: url(../img/brickbg-dark.png);
+	background-repeat: repeat-x;
 	height: 60px;
 	width: 100%;
 	border-top: 4px solid #a7895a;

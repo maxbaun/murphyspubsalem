@@ -2,57 +2,56 @@
 					<div class="menu-section">
 						<h3>Appetizers</h3>
 						
-						<h4>Chicken Fingers </h4>
+						<h4>Chicken Fingers</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Fresh chicken hand breaded and fried to perfection. Enjoy any style: buffalo, honey buffalo, BBQ, or teriyaki</p>
-							<p class="span1">8</p>
+							<p class="span1">9</p>
 						</div>
 						
 						<h4>Jalapeño Poppers</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Jalapeños stuffed with cream cheese. Served with sour cream or your choice of dipping sauce</p>
-							<p class="span1">7</p>
+							<p class="span1">8</p>
 						</div>
 						
 						<h4>Potato Skins</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Baked potatoes topped with melted cheese and bacon. Sour cream included on the side for dipping</p>
-							<p class="span1">7</p>
+							<p class="span1">8</p>
 						</div>
 						
 						<h4>Mozzarella Sticks</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Breaded mozzarella cheese fried crispy and served with a marinara dipping sauce</p>
-							<p class="span1">7</p>
+							<p class="span1">8</p>
 						</div>
 						
 						<h4>Nachos Plain</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Hand cut tortilla chips topped with mixed cheeses, tomatoes, olives, jalapeños, peppers & onions served with sour cream & salsa</p>
-							<p class="span1">7</p>
+							<p class="span1">8</p>
 							
 							<div class="row-fluid">
-								<p class="span4">Add Chicken (9)</p>
-								<p class="span4">Add Chili (9)</p>
-								<p class="span4">Add Steak (10)</p>
+								<p class="span4">Add Chicken (10)</p>
+								<p class="span4">Add Chili (10)</p>
+								<p class="span4">Add Steak (11)</p>
 							</div>
 						</div>
 						
 						<h4>Quesadillas</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Flour tortilla stuffed with peppers, onions, and tomatoes & mixed cheese served with salsa and sour cream on the side</p>
-
+							<p class="span1">8</p>
 							<div class="row-fluid">
-								<p class="span4">Steak (10)</p>
-								<p class="span4">Vegetable (7)</p>
-								<p class="span4">Chicken (8)</p>
+								<p class="span4">Chicken (9)</p>
+								<p class="span4">Steak (11)</p>
 							</div>													
 						</div>
 						
 						<h4>Wings</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Fresh chicken wings fried to order. Enjoy any style: Buffalo, Honey Buffalo, BBQ, or Teriyaki</p>
-							<p class="span1">7</p>
+							<p class="span1">8</p>
 						</div>
 						
 						<h4>Chips and Salsa </h4>
@@ -64,7 +63,7 @@
 						<h4>Fried Pickles</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Freshly sliced pickles battered in flour and fried</p>
-							<p class="span1">5</p>
+							<p class="span1">6</p>
 						</div>
 						
 						<h4>Side of French Fries </h4>
@@ -72,7 +71,6 @@
 							<p class="span11">16 ounces of hand cut fries , lightly salted and fried to perfection</p>
 							<p class="span1">4</p>
 						</div>
-						
 						
 						<div class="span12 nomargin">
 							<div class="span11"><h4>Seasoned Fries</h4></div>
@@ -83,13 +81,19 @@
 						<div class="span12 nomargin">
 							<p class="span11">16 ounces of thick fried onion rings</p>
 							<p class="span1">6</p>
-						</div>																																										
+						</div>			
+
+						<h4>Triple Play</h4>
+						<div class="span12 nomargin">
+							<p class="span11">Wings, Potato Skins & Mozzarella Sticks</p>
+							<p class="span1">12</p>
+						</div>
 					</div>
 					
 					<div class="menu-section">
 						
 						<div class="span12 nomargin">
-							<h3 class="span9">Soup</h3>
+							<h3 class="span9">Soups</h3>
 							<div class="span3 price-type">CUP/BOWL</div>
 						</div>
 						
@@ -101,12 +105,11 @@
 						
 						<h4>Chili</h4>
 						<div class="span12 nomargin">
-							<p class="span11">Topped with mixed cheeses alongside Murphy’s homemade tortilla chips</p>
+							<p class="span11">Topped with mixed cheeses alongside tortilla chips</p>
 							<p class="span1">4/6</p>
 						</div>
 					</div>
 					<div class="menu-section">
-						
 						<div class="span12 nomargin">
 							<h3 class="span9">Salad</h3>
 							<div class="span3 price-type">SM/LG</div>
@@ -120,13 +123,13 @@
 						
 						<h4>House with Grilled Chicken</h4>
 						<div class="span12 nomargin">
-							<p class="span11">Murphy’s house salad topped with fresh chicken</p>
+							<p class="span11">Murphy’s large house salad topped with fresh chicken</p>
 							<p class="span1">10</p>
 						</div>
 						
 						<h4>House with Murphy’s Marinated Steak Tips</h4>
 						<div class="span12 nomargin">
-							<p class="span11">Murphy’s house salad topped with Murphy’s famous steak tips cooked to order</p>
+							<p class="span11">Murphy’s large house salad topped with Murphy’s famous steak tips cooked to order</p>
 							<p class="span1">13</p>
 						</div>
 						
@@ -148,7 +151,7 @@
 							<p class="span1">13</p>
 						</div>
 						<div class="span12 center">
-							<p class="menuNotes">Salad Dressings: Italian, Creamy Italian, Caesar, Parmesan Peppercorn, Bleu Cheese,Balsamic Vinaigrette, Ranch, Russian, and Honey Mustard</p>
+							<p class="menuNotes">Salad Dressings: Italian, Creamy Italian, Caesar, Parmesan Peppercorn, Bleu Cheese, Balsamic Vinaigrette, Ranch, Russian, and Honey Mustard</p>
 						</div>										
 						
 					</div>					
@@ -190,44 +193,27 @@
 							<p class="span1">9</p>
 						</div>
 						
-						<h4>Seasoned Chicken Burger</h4>
-						<div class="span12 nomargin">
-							<p class="span11">6 ounce of seasoned chicken patty on a butter toasted bun</p>
-							<p class="span1">9</p>
-						</div>
 						<h4>Turkey Club</h4>
 						<div class="span12 nomargin">
 							<p class="span11">All natural oven roasted turkey breast sliced thin with lettuce, tomato, bacon and mayonnaise</p>
 							<p class="span1">9</p>
 						</div>
+
 						<h4>B.L.T.</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Bacon, lettuce, tomato, and mayonnaise on your choice of bread</p>
 							<p class="span1">9</p>
 						</div>
+
 						<h4>Steak Tip Sub</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Murphy’s marinated steak tips with American cheese stuffed in a sub roll</p>
 							<p class="span1">9</p>
 						</div>
+
 						<h4>Veggie Wrap</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Sauteed stir fry mix, lettuce, tomato, and ranch dressing in a toasted wrap</p>
-							<p class="span1">8</p>
-						</div>
-						<h4>Turkey Bacon Cheddar</h4>
-						<div class="span12 nomargin">
-							<p class="span11">Sliced oven roasted turkey breast with bacon, tomato, and cheddar cheese</p>
-							<p class="span1">9</p>
-						</div>
-						<h4>Turkey Reuben Toastie</h4>
-						<div class="span12 nomargin">
-							<p class="span11">Sliced oven roasted turkey breast topped with sauerkraut, Swiss cheese, and Russian dressing on rye bread</p>
-							<p class="span1">9</p>
-						</div>
-						<h4>Tomato, Onion, Cheddar Toastie</h4>
-						<div class="span12 nomargin">
-							<p class="span11">Sliced tomato and red onion topped with cheddar cheese on your choice of bread</p>
 							<p class="span1">8</p>
 						</div>
 
@@ -236,15 +222,17 @@
 							<p class="span11">Hot pastrami with Swiss cheese on a butter toasted bun topped with lettuce, tomato, and red onion</p>
 							<p class="span1">9</p>
 						</div>
+
 						<h4>Pulled Pork Sandwich </h4>
 						<div class="span12 nomargin">
 							<p class="span11">Hickory smoked pulled pork on a butter toasted bun with lettuce, tomato, and red onion</p>
 							<p class="span1">9</p>
 						</div>
+
 						<h4>Steak Bomb Wrap/or Sub</h4>
 						<div class="span12 nomargin">
 							<p class="span11">Shaved steak topped with melted cheese, grilled peppers, onions & mushrooms on a sub roll or wrap</p>
-							<p class="span1">9</p>
+							<p class="span1">10</p>
 						</div>																																																																								
 					</div>						
 				</div>		
@@ -252,7 +240,7 @@
 					<div class="menu-section">
 						<h3>Entrees</h3>
 						<div class="span12 center">
-							<p class="menuNotes">All entrees come with your choice of rice, mashed potatoes, or homemade french fries. Fries may be substituted for seasoned french fries or onion rings for an additional $1. The Shepard’s Pie, Beef Stew, and Stir Fry’s do not come with an additional side.</p>
+							<p class="menuNotes">All entrees come with your choice of rice, mashed potatoes, or homemade french fries. Fries may be substituted for seasoned french fries or onion rings for an additional $1. The Shepard’s Pie and Stir Frys do not come with a side.</p>
 						</div>
 												
 						<h4>Shepard’s Pie</h4>
@@ -283,12 +271,9 @@
 						<div class="span12 nomargin">
 							<p class="span11">Sauteed vegetable medley served over a bed of rice with stir fry sauce</p>
 							<p class="span1">9</p>
-						</div>
-						
-						<h4>Chicken Stir Fry</h4>
-						<div class="span12 nomargin">
-							<p class="span11">Murphy’s vegetable stir fry with fresh grilled chicken</p>
-							<p class="span1">11</p>
+							<div class="row-fluid">
+								<p class="span4">Add Chicken (11)</p>
+							</div>								
 						</div>
 						
 						<h4>Grilled Combo</h4>
