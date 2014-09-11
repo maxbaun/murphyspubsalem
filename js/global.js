@@ -170,17 +170,17 @@ $(document).ready(function() {
 	
 	/* #Social effect
 	================================================= */
-	$(".social li a").hover(function() {	
-		var e = this;
-		$(e).stop().animate({ marginTop: "-8px", paddingBottom: "8px", opacity : 1 }, 250, function() {
-			$(e).animate({ marginTop: "-4px", paddingBottom: "4px" }, 250);
-		});
-	},function(){
-		var e = this;
-		$(e).stop().animate({ marginTop: "0px", paddingBottom: "0px", opacity : 0.9 }, 250, function() {
-			$(e).animate({ marginTop: "0px", paddingBottom: "0px" }, 250);
-		});
-	});
+	// $(".social li a").hover(function() {	
+	// 	var e = this;
+	// 	$(e).stop().animate({ marginTop: "-8px", paddingBottom: "8px", opacity : 1 }, 250, function() {
+	// 		$(e).animate({ marginTop: "-4px", paddingBottom: "4px" }, 250);
+	// 	});
+	// },function(){
+	// 	var e = this;
+	// 	$(e).stop().animate({ marginTop: "0px", paddingBottom: "0px", opacity : 0.9 }, 250, function() {
+	// 		$(e).animate({ marginTop: "0px", paddingBottom: "0px" }, 250);
+	// 	});
+	// });
 	
 	/* #Colorbox on gallery 
 	================================================= */
@@ -541,8 +541,8 @@ $(document).ready(function() {
 					 //var json = jQuery.parseJSON(data);
 					 renderAlbums(data);
 				}
-			}).error(function() {
-				alert("There was an error");
+			}).error(function(error) {
+				alert("There was an error: " + error.responseText );
 			});		
 		
 // 		$.ajax({

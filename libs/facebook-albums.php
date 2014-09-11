@@ -19,15 +19,18 @@ foreach($data as $album)
 {
 	$id = $album['id'];
 	$name = $album['name'];
-	if(!$album['cover_photo'])
+	if(!isset($album['cover_photo']))
 	{
 		$cover = "";
 		continue;
 	}
 	else
 	{
-		$coverdata = $facebook->api($album['cover_photo']);		
-		if(is_null($coverdata['images'][3]['source'])){
+		$coverdata = $facebook->api($album['cover_photo']);
+		// debugging
+		// var_dump($coverdata['images']);
+		// echo '<br/><br/>';
+		if(!isset($coverdata['images'][3])){
 			$cover = $coverdata['images'][1]['source'];	// if the regular image is not avail, use the first one			
 		}
 		else

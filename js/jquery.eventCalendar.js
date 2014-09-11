@@ -239,8 +239,8 @@ $.fn.eventCalendar = function(options){
 			$.getJSON(eventsOpts.eventsjson + "?limit="+limit+"&year="+year+"&month="+month+"&day="+day, function(data) {
 				flags.eventsJson = data; // save data to future filters
 				getEventsData(flags.eventsJson, limit, year, month, day, direction);
-			}).error(function() {
-				showError("error getting json: ");
+			}).error(function(error) {
+				showError("error getting json: " + error.message);
 			});
 		} else {
 			// filter previus saved json

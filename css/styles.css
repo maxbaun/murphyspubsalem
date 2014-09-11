@@ -161,18 +161,18 @@ a:focus {
 /* #Panel Styles
 ================================================== */
 .panel.paper {
-	background: url(../img/extra_clean_paper.png) 50% 0 repeat fixed;
+	background: url(../img/extra_clean_paper.png) 50% 0 repeat;
 }
 .panel.dark-leather {
-	background: url(../img/dark_leather.png) 50% 0 repeat fixed;
+	background: url(../img/dark_leather.png) 50% 0 repeat;
 }
 
 .panel.clouds {
-	background: #efe7e3 url(../img/food-bg.jpg) 0% 0% no-repeat fixed;
+	background: #efe7e3 url(../img/food-bg.jpg) 0% 0% no-repeat;
 }
 
 .panel.concrete {
-	background: url(../img/red-concrete.png) 50% 50% repeat fixed;
+	background: url(../img/red-concrete.png) 50% 50% repeat;
 }
 
 /* #Header
@@ -496,11 +496,14 @@ a:focus {
 ================================================== */
 #events {
 	background-position: 100% 0;
-	background-attachment: fixed;
 	background-repeat: no-repeat;
 	width: 100%;
 	padding: 6% 0;
 	color: #fff;
+	background-attachment: fixed;
+	background-color: #381414; 
+	background-image: url(../img/red-barbg.jpg); 
+	background-size: cover;
 }
 
 .location-title{
@@ -574,7 +577,7 @@ label.option{
 	margin-right:10px;
 }
 
-#events { background-color: #381414; background-image: url(../img/red-barbg.jpg); background-size: cover;}
+
 
 /* #Menu
 ================================================== */

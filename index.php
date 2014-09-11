@@ -2,7 +2,7 @@
 $title = "Salem Night Life, Sports Bar, and Restaurant | Murphy's Salem";
 $keywords = "salem, trivia, sports, nightlife, karaoke, restaurant, bar, irish pub, sports bar, djs, music";
 $metadescription = "Salem, MA nightlife, pub, sports bar, and restaurant. Murphy's Salem features the best in live music and DJs on the North Shore.";
-$version = 1.78;
+$version = 1.79;
 $dev = true;
 $pref = ""; 
 $pref = isset($_SERVER["HTTPS"] ) ? "https://" : "http://";
@@ -191,7 +191,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 	</div>
 	
 	<!-- EVENTS -->
-	<div id="events" class="panel section-type light" data-slide="3" data-stellar-background-ratio="0" >
+	<div id="events" class="panel concrete section-type ligh" data-slide="3">
 		<h2 class="page-title">Events<span class="slide-loader"> (Loading...)</span></h2>
 		
 		<div class="container">
@@ -204,7 +204,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 		</div>
 	</div>
 	<!-- Menu -->
-	<div id="functions" class="panel dark-leather section-type menu-type light" data-slide="4" data-stellar-background-ratio="0.5">
+	<div id="functions" class="panel dark-leather section-type menu-type light" data-slide="4">
 		<div class="container">
 
 				<div class="span8 right">
@@ -454,14 +454,14 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 						<div class="control-group">
 							<label class="control-label" for="inputName">Full Name (*):</label>
 							<div class="controls">
-							  <input type="text" class="span12" id="inputName" placeholder="John Doe">
+							  <input type="text" class="span12" id="inputName" placeholder="John Smith">
 							</div>
 						</div>
 						
 						<div class="control-group">
 							<label class="control-label" for="inputEmail">Your E-Mail (*):</label>
 							<div class="controls">
-							  <input type="text" class="span12" name="email" id="inputEmail" placeholder="john@doe.com">
+							  <input type="text" class="span12" name="email" id="inputEmail" placeholder="john@smith.com">
 							</div>
 						</div>
 						

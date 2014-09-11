@@ -185,7 +185,11 @@
 				background-color:red;
 			}
 
-.eventsCalendar-subtitle { padding-top:10px;}
+.eventsCalendar-subtitle { 
+	padding-top:10px; 
+	color:#fff;
+
+}
 .eventsCalendar-list-wrap {
 	min-height:100px;
 	position:relative;
@@ -207,7 +211,7 @@
 	}
 		.eventsCalendar-list li time {
 			font-size:10px;
-			line-height:13px;
+			line-height:15px;
 		}
 		.eventsCalendar-list li time em {
 			float:left;
@@ -219,7 +223,7 @@
 			background-color:#807E7E;
 			color:#fff;
 			padding:0 5px 0 4px;
-			margin:0 0 0 3px;
+			margin:0 0 0 10px;
 		}
 		.eventsCalendar-list li .eventTitle {
 			display:block;
