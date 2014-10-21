@@ -1,7 +1,7 @@
 <?php
 
-date_default_timezone_set('America/Los_Angeles');  
- require_once("facebook.php");
+date_default_timezone_set('America/New_York');  
+require_once("facebook.php");
 // 
  $config = array();
  $config['appId'] = '409416482513248';
