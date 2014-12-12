@@ -9,10 +9,16 @@ require_once("facebook.php");
 // 
  $facebook = new Facebook($config);
 // 
- $d = $facebook->api("637938886216768/albums?fields=cover_photo,link,name,id");
-// //$d = $facebook->api("637938886216768/events?fields=cover,end_time,name,id");
-// 
-// 
+
+
+try {
+   $d = $facebook->api("637938886216768/albums?fields=cover_photo,link,name,id");
+} catch ( Exception $e ) {
+	echo "Unable to connect to Facebook API";
+}
+
+
+
 $data = $d['data'];
 $albums = Array();
 foreach($data as $album)
@@ -26,7 +32,17 @@ foreach($data as $album)
 	}
 	else
 	{
-		$coverdata = $facebook->api($album['cover_photo']);
+		// echo "cover_photo " . $album['cover_photo'] . "<br/><br/>";
+		if(isset($album['cover_photo'])){
+			try {
+			   $coverdata = $facebook->api($album['cover_photo']);
+			} catch ( Exception $e ) {
+			    continue;
+			}			
+		}
+			
+		else
+			$coverdata = "";
 		// debugging
 		// var_dump($coverdata['images']);
 		// echo '<br/><br/>';
@@ -39,6 +55,7 @@ foreach($data as $album)
 	$link = $album['link'];
 	
 	$albums[] = Array("id"=>$id,"name"=>$name,"cover"=>$cover,"link"=>$link);
+
 }
 
 echo json_encode($albums);

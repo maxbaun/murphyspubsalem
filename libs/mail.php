@@ -10,6 +10,7 @@
 /* #Configuration
 ================================================== */
 $to	 		= "info@murphyspubsalem.com"; 				// Your email
+// $to     = "maxbaun@gmail.com"; // debugging
 $owner	 	= "Murphys Pub Salem"; 					// Your name
 $subject	= "Murphys Salem // Website Contact Form";	// Email Subject
 

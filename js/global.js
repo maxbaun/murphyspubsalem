@@ -343,7 +343,7 @@ $(document).ready(function() {
 		$("#contact-form #response").hide();
 		
 		/* Append the loading logo */
-		$(this).parent().append('<img src="assets/images/loading.gif" class="loading" alt="Loading..." />');
+		// $(this).parent().append('<img src="assets/images/loading.gif" class="loading" alt="Loading..." />');
 		
 		/* Get the values */
         var name = $('#contact-form #inputName').val();
@@ -542,7 +542,7 @@ $(document).ready(function() {
 					 renderAlbums(data);
 				}
 			}).error(function(error) {
-				alert("There was an error: " + error.responseText );
+				console.error("There was an error: " + error.responseText );
 			});		
 		
 // 		$.ajax({
