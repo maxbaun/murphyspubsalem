@@ -454,7 +454,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 						<div class="control-group">
 							<label class="control-label" for="inputName">Full Name (*):</label>
 							<div class="controls">
-							  <input type="text" class="span12" id="inputName" placeholder="John Smith">
+							  <input type="text" class="span12" id="inputName" name="name" placeholder="John Smith">
 							</div>
 						</div>
 						
@@ -468,20 +468,22 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 						<div class="control-group">
 							<label class="control-label" for="textMessage">Message (*):</label>
 							<div class="controls">
-							   <textarea rows="8" class="span12" id="textMessage" placeholder="I would like to know if..."></textarea>
+							   <textarea rows="8" class="span12" id="textMessage" name="message" placeholder="I would like to know if..."></textarea>
 							</div>
 						</div>
-						
+						<div class="control-group">
+							<label class="control-label" for="g-recaptcha">Captcha (*):</label>
+							<div class="controls">
+								<div class="g-recaptcha" data-sitekey="6LdhyP8SAAAAAKAuWgjxLlIytmKaimuBbMTTFjQj"></div>
+							</div>
+						</div>
 						<div class="control-group">
 							<div class="controls">
 							  <div id="response" style="display: none;"></div>
 							  <button type="submit" class="btn btn-primary right">Submit</button>
 							</div>
 						</div>
-
-					</form>
-					
-					
+					</form>					
 				</div>
 				<div class="span4">
 					<h3>Contact info</h3>
@@ -518,7 +520,7 @@ $host = $pref . $_SERVER["HTTP_HOST"];
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<!-- Google Maps API -->
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
     <?php
     if( $dev )
     {

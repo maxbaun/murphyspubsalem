@@ -35,7 +35,7 @@ $(document).ready(function() {
 	================================================== */
 	var emailError 		= "Please enter a valid email address",
 		nameError		= "Please enter your name",
-		commentsError	= "Please enter your comment",
+		commentsError	= "Please enter your message",
 		phoneError		= "Please enter your phone number",
 		guestCountError = "Please enter a guest count",
 		eventDateError	= "Please enter an event date",
@@ -346,9 +346,10 @@ $(document).ready(function() {
 		// $(this).parent().append('<img src="assets/images/loading.gif" class="loading" alt="Loading..." />');
 		
 		/* Get the values */
-        var name = $('#contact-form #inputName').val();
-        var email = $('#contact-form #inputEmail').val();
-        var comments = $('#contact-form #textMessage').val();
+    var name = $('#contact-form #inputName').val();
+    var email = $('#contact-form #inputEmail').val();
+    var comments = $('#contact-form #textMessage').val();
+    var captcha = $('#recaptcha-token').val();
 		
 		/* Field validation */
 		if(name == ""){
@@ -362,26 +363,31 @@ $(document).ready(function() {
 			return false;
 		}
 
+		var postData = $('#contact-form').serializeArray();
+
 		/* Ajax post */
 		$.ajax({
-            type: 'post',
-            url: 'libs/mail.php',
-            data: 'name=' + name + '&email=' + email + '&comments=' + comments,
-            success: function(results) {
-			
+      type: 'post',
+      url: 'libs/mail.php',
+      data: postData,
+      success: function(results) {
+
+				results = $.parseJSON(results);
 				/* Show success message */
-				mailResponse(results, 'success');
-				
-				/* Reset values */
-				$("#contact-form #inputName").val('');
-				$("#contact-form #inputEmail").val('');
-				$("#contact-form #textMessage").val('');
-				
-            },		
+				if(results.error){
+					mailResponse(results.message, 'error');
+				}
+				else{
+					mailResponse(results.message, 'success');
+					$("#contact-form #inputName").val('');
+					$("#contact-form #inputEmail").val('');
+					$("#contact-form #textMessage").val('');					
+				}		
+      },		
 			error: function(error){
 				mailResponse(error);
 			}
-        });
+    });
 		
 		return false;
 		
