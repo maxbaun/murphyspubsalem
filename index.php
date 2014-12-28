@@ -2,7 +2,7 @@
 $title = "Salem Night Life, Sports Bar, and Restaurant | Murphy's Salem";
 $keywords = "salem, trivia, sports, nightlife, karaoke, restaurant, bar, irish pub, sports bar, djs, music";
 $metadescription = "Salem, MA nightlife, pub, sports bar, and restaurant. Murphy's Salem features the best in live music and DJs on the North Shore.";
-$version = 1.8;
+$version = 1.81;
 $dev = true;
 $pref = ""; 
 $pref = isset($_SERVER["HTTPS"] ) ? "https://" : "http://";
