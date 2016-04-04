@@ -26,7 +26,7 @@
 /* event calendar styling */
 .months											{ color: #ffffff; text-align: center; font-size: 2em; font-weight: 400; }
 .months div										{ background: rgba(0, 0, 0, 0.3); border: 1px solid #282828; margin-bottom: 5px; padding: 5px; position: relative; }
-.months a										{ background: rgba(255,255,255,0.1); color: #fff !important; display: block; padding: 5px 18px; text-decoration: none; font-weight: 300 !important; 
+.months a										{ background: rgba(255,255,255,0.1); color: #fff !important; display: block; padding: 5px 18px; text-decoration: none; font-weight: 300 !important;
 												-webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out;
 												}
 .months a:hover									{ background: rgba(255,255,255,0.3); }
@@ -47,8 +47,8 @@
 												font-size: 13px; text-align: center; color: #ffffff; padding-top: .5em;
 												-moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; box-sizing: padding-box; text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
 												}
-												
-										
+
+
 .event-info ul									{ margin: 0; padding: 0; list-style: none; }
 .event-info li									{ margin: 0; padding: 0; }
 .event-info li p								{ margin: 5px 0; }
@@ -68,11 +68,11 @@
 .post-offset table td							{ border: 1px solid #282828; color: #bdbdbd; padding: 10px 4px; }
 .post-offset table tr:nth-child(odd) td			{ background: rgba(0,0,0,0.3); }
 
-span.party										
-{ 
-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.35); 
-color: #fff !important; 
-text-decoration: none; 
+span.party
+{
+box-shadow: inset 0px 1px 0px rgba(255,255,255,0.35);
+color: #fff !important;
+text-decoration: none;
 text-shadow: 0px -1px 0px rgba(0,0,0,.35);
 background: transparent; /* clear just in case */
 filter: '';
@@ -188,10 +188,10 @@ a:focus {
 }
 
 #top .container {
-	
+
 }
 
-/* 
+/*
 #logo{
 	margin-left:0;
 }
@@ -244,13 +244,13 @@ a:focus {
 #logo > div > a:hover {
 	color: #474747;
 	text-decoration: none;
-	
+
 }
 
-/* 
+/*
 #logo{
 	margin-left: 0;
-	
+
 }
  */
 
@@ -261,7 +261,7 @@ a:focus {
 
 #top ul.span5 > li {
 	position: relative;
-	float: left; 
+	float: left;
 	margin: 10px 6px 0 0;
 	display: block;
 }
@@ -273,7 +273,7 @@ a:focus {
 }
 
 #top ul.span5 > li > a {
-	float: left; 
+	float: left;
 	color: #fff;
 	font-size: 17px;
 	font-weight: 700;
@@ -409,11 +409,11 @@ a:focus {
 	margin-bottom: 12px;
 }
 
-#front .action { 
-	
+#front .action {
+
 }
 
-#front .action a { 
+#front .action a {
 	color: #fff;
 	background: #a7895a;
 	padding: 6px;
@@ -501,8 +501,8 @@ a:focus {
 	padding: 6% 0;
 	color: #fff;
 	background-attachment: fixed;
-	background-color: #381414; 
-	background-image: url(../img/red-barbg.jpg); 
+	background-color: #381414;
+	background-image: url(../img/red-barbg.jpg);
 	background-size: cover;
 }
 
@@ -684,20 +684,20 @@ label.option{
 #gallery figure {
 	position: relative;
 	overflow: hidden;
-	display: block; 
+	display: block;
 	padding: 0;
 	margin: 0;
 	border: 10px solid #fff;
 }
 
 #gallery figure img {
-	
+
 }
 
-#gallery figcaption { 
-  position: absolute; 
+#gallery figcaption {
+  position: absolute;
   background: url(../img/black_px_75.png) repeat;
-  color: white; 
+  color: white;
   opacity: 0;
   top: 0;
   left: 0;
@@ -732,12 +732,12 @@ label.option{
 }
 
 .thumb-bg{
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	background-size:cover;
 	background-position: center center;
-  	margin: 0 auto; 
-  	width: 100%;  
-  	position: relative; 	
+  	margin: 0 auto;
+  	width: 100%;
+  	position: relative;
 }
 
 a.thumbnail:hover {
@@ -758,7 +758,7 @@ a.thumbnail:hover {
 	width: 100%;
 	height: 360px;
 	margin-bottom: 60px;
-	
+
 }
 
 #contact-map img{
@@ -827,7 +827,7 @@ a.thumbnail:hover {
 
 /*
  * Example if you need to add other social icons *
- * 
+ *
 .social li a[href*="behance.com"]{
 	background-image: url(../img/social/behance.png);
 }
@@ -907,7 +907,7 @@ a.thumbnail:hover {
 	margin: 0 auto 15px;
 	width: 80px;
 	font-size: 14px;
-	
+
 }
 
 .to-top:hover {
@@ -990,17 +990,17 @@ select.select-menu{
 
 /* Mobile Fix
 ================================================== */
-html.mobile #grapes, 
-html.mobile #grape, 
+html.mobile #grapes,
+html.mobile #grape,
 html.mobile #wine-glass {
 	display: none !important;
 }
 
-html.mobile #about, 
-html.mobile #events, 
-html.mobile #wine, 
-html.mobile #gallery, 
-html.mobile #contact, 
+html.mobile #about,
+html.mobile #events,
+html.mobile #wine,
+html.mobile #gallery,
+html.mobile #contact,
 html.mobile #closing {
 	background-attachment: scroll !important;
 	background-position: top center !important;
@@ -1034,7 +1034,7 @@ html.ie8 #locations-select {
 }
 
 html.ie7 #gallery figcaption,
-html.ie8 #gallery figcaption { 
+html.ie8 #gallery figcaption {
 	display: none;
 	opacity: 1;
 }
@@ -1047,13 +1047,13 @@ html.ie8 #gallery figure:hover figcaption {
 
 /* #Media Queries
 ================================================== */
-	
+
 	/* Because all the cool kids doing it */
 	img {max-width:100%;}
-	
+
 	/* Very large screen (devices and browsers) */
 	@media only screen and (min-width: 1200px) {
-	
+
 		body {
 			font-size: 16px;
 			line-height: 22px;
@@ -1061,35 +1061,35 @@ html.ie8 #gallery figure:hover figcaption {
 		#top {
 			height: 72px;
 		}
-		
+
 		#front {
 			padding-top: 76px;
 		}
-		
-/* 
+
+/*
 		#logo {
 			margin-left: 2.5%;
 		}
  */
-		
+
 		#top ul.span5 > li {
-			float: left; 
+			float: left;
 			margin: 13px 20px 0 0;
 		}
-		
+
 		#top ul.span5.right > li {
-			margin: 13px 0 0 20px; 
-		}	
+			margin: 13px 0 0 20px;
+		}
 
 		#top ul.span5.right > li > a {
 			float: right;
-		}					
-			
+		}
+
 		#top ul.span5 > li > a {
 			font-size: 17px;
 			padding: 11px 10px;
 		}
-		
+
 		.thumbnails > li, .albums > li {
 			margin-bottom: 30px;
 		}
@@ -1110,40 +1110,40 @@ html.ie8 #gallery figure:hover figcaption {
 			border: 10px solid #fff;
 			margin-bottom: 40px;
 		}
-		
+
 		#privteFunctionsFormWraper span12{
 			margin-left:0;
 		}
-		
-		.flex-direction-nav .flex-next, 
+
+		.flex-direction-nav .flex-next,
 		.flexslider:hover .flex-next {
-			right: 90px; 
+			right: 90px;
 		}
 
-		.flex-direction-nav .flex-prev, 
+		.flex-direction-nav .flex-prev,
 		.flexslider:hover .flex-prev {
 			left: 90px;
 		}
-		
+
 		#logo > div {
 			padding-top: 12px;
-		}		
-	
-	}	
-	
-	/* Smaller than wider layout 1200 (devices and browsers) */ 
+		}
+
+	}
+
+	/* Smaller than wider layout 1200 (devices and browsers) */
 	@media only screen and (min-width: 979px) and (max-width: 1199px) {}
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 979px) {
-	
+
 		#top ul.span5 > li {
 			margin: 10px 6px 0 0;
 		}
-		
+
 		#top ul.span5.right > li {
 			margin: 10px 0 0 6px;
-		}			
+		}
 
 		#top ul.span5 > li > a {
 			font-size: 14px;
@@ -1157,14 +1157,14 @@ html.ie8 #gallery figure:hover figcaption {
 			padding-bottom: 0px !important;
 		}
 		/* Responsive Nav */
-		#top ul.span5 {	
+		#top ul.span5 {
 			display: none;
 		}
 
 		#top .customSelect, .select-menu {
 			display: block !important;
-		}		
-		
+		}
+
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -1189,24 +1189,24 @@ html.ie8 #gallery figure:hover figcaption {
 		#menu .span4 .span12{
 			margin-bottom:0px;
 		}
-		
+
 		.price-type {
 			padding-top:0;
 			text-align: left;
-		}		
-				
+		}
+
 		label.option{
 			display:block;
 		}
-		
+
 		select{
 			width: 100%;
 			margin-bottom: 10px !important;
 		}
-		
+
 		#contact-map {
 			height: 200px;
-		}		
+		}
 		/* Bootstrap fix */
 		body {
 			padding-left: 0px !important;
@@ -1268,7 +1268,7 @@ html.ie8 #gallery figure:hover figcaption {
 		.menu-section.wine .price-type {
 			display: none;
 		}
-		
+
 
 
 
@@ -1278,16 +1278,16 @@ html.ie8 #gallery figure:hover figcaption {
 			float: left;
 			margin-left: 15px;
 		}
-		
-		
-	
+
+
+
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-	
-	
+
+
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -1361,9 +1361,9 @@ html.ie8 #gallery figure:hover figcaption {
 
 
 	}
-	
+
 	/* iPhone 2G-4S in portrait & landscape */
-	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 		html, body {
 /* 			overflow-x: hidden; */
 		}
@@ -1371,8 +1371,8 @@ html.ie8 #gallery figure:hover figcaption {
 			overflow-x: hidden;
 		}
 	}
-	
-	/* iPad portrait 
+
+	/* iPad portrait
 	@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
 		#front .subtitle span {
 			font-size: 16px !important;
@@ -1381,14 +1381,14 @@ html.ie8 #gallery figure:hover figcaption {
 
 	}
 
-	/* iPad landscape 
+	/* iPad landscape
 	@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
 		#front .subtitle span {
 			font-size: 18px !important;
 			line-height: 40px !important;
 		}
 
-	}	
+	}
 
 /* #Misc
 ================================================== */
@@ -1490,12 +1490,12 @@ html.ie8 #gallery figure:hover figcaption {
 }
 
 /*
-#top ul > li > a, 
-#front .title span, 
-#front .subtitle span, 
+#top ul > li > a,
+#front .title span,
+#front .subtitle span,
 #front .action a,
 #about-text h2,
-.customSelect, 
+.customSelect,
 .select-menu {
 	border-radius: 0px !important;
 	-webkit-border-radius: 0px !important;
@@ -1517,7 +1517,7 @@ html.ie8 #gallery figure:hover figcaption {
 		Just create a "fonts" folder at the root,
 		copy your FontName into code below and remove
 		comment brackets */
-		
+
 /*	@font-face {
 	    font-family: 'FontName';
 	    src: url('../fonts/FontName.eot');

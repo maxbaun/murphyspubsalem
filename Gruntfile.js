@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                 options : {
                     livereload : true
                 }
-            }            
+            }
         },
         cssmin:{
             production:{
@@ -104,7 +104,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand:true,
                     cwd:'./',
-                    src:['**/*','!**/dist/**','!**/js/**','!**/img/**','!**/css/**','!stylesheets','!package.json','!bower.json','!**/bower_components/**','!node_modules/**','!**/scss/**','!Gruntfile.js'],
+                    src:['**/*','!**/dist/**','!**/js/**','!**/img/**','!**/css/**','!stylesheets','!package.json','!bower.json','!**/bower_components/**','!node_modules/**','!**/scss/**','!Gruntfile.js','!old.index.php'],
                     dest: 'dist'
                 }]
             }
@@ -123,22 +123,22 @@ module.exports = function(grunt) {
                 files:{
                     'dist/js/scripts.min.js':["dist/js/scripts.js"]
                 }
-            }       
+            }
         },
         "ftp-deploy":{
             production:{
                 auth:{
                     host:'murphyspubsalem.com',
                     port:21,
-                    authKey:'murphysKey'              
+                    authKey:'murphysKey'
                 },
                 src:"dist",
                 dest:"public_html",
                 serverSep: '/',
                 concurrency: 4,
-                progress: true 
-            }        
-        }        
+                progress: true
+            }
+        }
     });
 
     // Default task
@@ -147,13 +147,13 @@ module.exports = function(grunt) {
     // Build task
     grunt.registerTask('build',['cssmin:production','concat','uglify','imagemin:production','copy:production']);
 
-    
+
     grunt.registerTask('cp',['copy']);
     grunt.registerTask('concat',['concat']);
     grunt.registerTask('uglify',['ugilfy']);
     grunt.registerTask('image',['imagemin']);
     grunt.registerTask('deploy',['ftp-deploy']);
-    
+
     // Load up tasks
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
