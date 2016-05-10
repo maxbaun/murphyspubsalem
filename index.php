@@ -99,11 +99,12 @@ $host = $pref . $_SERVER["HTTP_HOST"];
           <img src="/img/logo-large.png" alt="Murphys Pub Salem - Salem, MA Restaurant & Bar"/>
         </div>
         <div class="content">
-          <?php include("inc/address.inc"); ?>
+          <h3><a href="https://www.facebook.com/Murphys-Restaurant-Pub-637938886216768/?fref=ts">Please visit us on Facebook for more info!</a></h3>
           <ul class="social">
-            <li><a href="https://www.facebook.com/pages/Murphy's-Restaurant-Pub/637938886216768">Join us on Facebook!</a></li>
+            <li><a href="https://www.facebook.com/Murphys-Restaurant-Pub-637938886216768/?fref=ts">Join us on Facebook!</a></li>
             <li><a href="https://twitter.com/MurphysSalem">Follow us on Twitter!</a></li>
           </ul>
+          <?php include("inc/address.inc"); ?>
         </div>
       </div>
     </div>
